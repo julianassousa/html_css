@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0px;
+        }
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: cadetblue;
+            padding: 5px;
+            box-shadow: 3px 3px 6px #bdbdbb;
+        }
+        nav > a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.507);
+        }
+        article {
+            background-color: rgb(136, 161, 207);
+            padding: 10px;
+        }
+        article > aside {
+            background-color: rgb(104, 124, 160);
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="noticias"></section>
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe libero reprehenderit sed vero esse ipsum porro dolorum nihil? Ipsam voluptates perspiciatis dignissimos repellat laboriosam illum laudantium excepturi voluptas recusandae.    </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Juliana Sousa</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
