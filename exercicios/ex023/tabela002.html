@@ -23,9 +23,21 @@
             text-align: right;
         }
 
-        thead, tfoot {
-            background-color: darkslategray;
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(109, 108, 108);
             color: white;
+        }
+
+        thead, tfoot {
+            background-color: rgb(203, 207, 211);
+            color: rgb(71, 71, 71);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(227, 227, 255);
         }
     </style>
 </head>
@@ -34,6 +46,7 @@
 
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -43,10 +56,12 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -163,7 +178,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>213.421.037</strong></td>
             </tr>
         </tfoot>
